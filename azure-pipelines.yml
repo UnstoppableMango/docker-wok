@@ -1,0 +1,13 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+
+workspace:
+  clean: all
+
+pool: Linux
+
+steps:
+- 
