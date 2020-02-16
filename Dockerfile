@@ -43,5 +43,5 @@ RUN apt-get update && \
         gettext \
         python3-openssl
 
-COPY --from=build /wok/wok*.deb .
+COPY --from=build /wok/wok*ubuntu*.deb .
 RUN dpkg -i wok*.deb
