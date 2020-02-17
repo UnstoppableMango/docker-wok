@@ -45,3 +45,5 @@ RUN apt-get update && \
 
 COPY --from=build /wok/wok*ubuntu*.deb .
 RUN dpkg -i wok*.deb
+
+ENTRYPOINT [/usr/bin/wokd]
